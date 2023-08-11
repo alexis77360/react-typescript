@@ -24,9 +24,6 @@ const App = () => {
 
     //! Pour repasser l'input en vide
     (document.getElementById("inputMessage") as HTMLInputElement).value = "";
-
-
-
   };
 
   return (
@@ -38,12 +35,8 @@ const App = () => {
       </form>
       <h2> Messages</h2>
       <div> {messData?.map((mess) => (
-      
       <Message mess={mess} messData={messData} setMessData={setMessData} key={mess.id} />
       ))} </div>
-      
-      
-
     </div>
   );
 };
